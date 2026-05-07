@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(npm install *)",
+      "Bash(python init_db.py)",
+      "Bash(uvicorn main:app --host 0.0.0.0 --port 8000)",
+      "Bash(curl -s http://localhost:8000/)",
+      "Bash(python -m uvicorn main:app --host 0.0.0.0 --port 8000)",
+      "Bash(npm run *)",
+      "Bash(curl *)",
+      "Bash(pkill *)",
+      "Bash(TASKKILL /F /IM python.exe /FI \"WINDOWTITLE eq *uvicorn*\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)",
+      "Bash(python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); [print\\(p\\) for p in sorted\\(d['paths'].keys\\(\\)\\)]\")",
+      "Bash(python -c ' *)",
+      "Bash(findstr SUCCESS)",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\('token','error'\\)\\)\")",
+      "Bash(awk '{print $5}')",
+      "Bash(findstr \"5173\\\\|8000\")",
+      "Bash(python -m uvicorn main:app --reload --host 0.0.0.0 --port 8000)",
+      "Bash(findstr \"5173\\\\|5174\\\\|8000\")",
+      "Bash(findstr \"8000\")",
+      "Bash(npx vite *)",
+      "Bash(python3 *)",
+      "Bash(python *)",
+      "Bash(node node_modules/vite/bin/vite.js build)",
+      "Bash(node node_modules/vite/bin/vite.js --host 0.0.0.0)",
+      "Bash(tasklist)",
+      "Bash(powershell -Command \"Get-Process python | Stop-Process -Force\")"
+    ]
+  }
+}
